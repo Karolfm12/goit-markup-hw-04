@@ -127,6 +127,7 @@ a {
 .hero-section {
   height: 600px;
   background-image: url("/images/people-office1.webp");
+  background-size: cover;
   opacity: 0.9;
   background-repeat: no-repeat;
   background-color: rgba(46, 47, 66, 0.7);
@@ -189,6 +190,84 @@ a {
 .features {
   display: flex;
   gap: 24px;
+}
+
+.features .icon {
+  background-color: rgba(244, 244, 253, 1);
+  width: 264px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.icon svg {
+  width: 64px;
+  height: 64px;
+}
+
+.our-team .icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(77, 90, 229, 1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-team .icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-around;
+}
+.social-media-icons .icon {
+  cursor: pointer;
+}
+
+.customers-icons {
+  display: flex;
+  gap: 24px;
+}
+.customers-icons .icon {
+  border: 1px solid rgba(142, 143, 153, 1);
+  border-radius: 4px;
+  width: 168px;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers-icons .icon svg {
+  width: 104px;
+  height: 56px;
+}
+
+footer {
+  display: flex;
+}
+
+.footer-social-media {
+  width: 208px;
+}
+
+.footer-social-media .icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(77, 90, 229, 1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-media .icon svg {
+  width: 24px;
 }
 
 .main-feature {
