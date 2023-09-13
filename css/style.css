@@ -94,6 +94,18 @@ header {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-right {
+  font-weight: 400;
+
+  display: flex;
+  gap: 40px;
+}
 
 ul {
   display: flex;
@@ -104,13 +116,6 @@ ul {
 
 .features {
   gap: 8px;
-}
-
-.nav-right {
-  font-weight: 400;
-
-  display: flex;
-  gap: 40px;
 }
 
 a {
@@ -316,7 +321,7 @@ h3 {
 
 /* SECTION */
 section {
-  padding: 120px 120px;
+  padding: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
