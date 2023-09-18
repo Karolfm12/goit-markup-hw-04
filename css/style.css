@@ -16,6 +16,7 @@
 }
 
 body {
+  /* display: block; */
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -44,6 +45,8 @@ img {
 .head {
   border-bottom: 1px solid #e7e9fc;
   padding: 31px 0;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -111,8 +114,19 @@ img {
     ),
     url(../images/herosection.jpg);
   padding: 188px 0;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
 }
-
+.herosection .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 .mainheader {
   font-size: 56px;
   line-height: 1.07;
@@ -296,25 +310,33 @@ img {
 
 .footercontainer {
   display: flex;
-  gap: 150px;
+  align-items: baseline;
+  gap: 120px;
 }
 
 .footer .socialicons {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 16px;
   justify-content: center;
   padding: 20px 0 0 0;
 }
 
-.footer .link {
-  display: inline-block;
-  margin-bottom: 16px;
+.footer .sociallink {
+  display: flex;
+  /* display: inline-block;
+  margin-bottom: 16px; */
+}
+
+.footer .sociallink:hover,
+.footer .sociallink:focus {
+  background-color: #31d0aa;
 }
 
 .footer .paragraph {
   max-width: 264px;
-  color: var(--footer-text);
+  color: var(--background-color);
+  margin-bottom: 16px;
 }
 
 .footer .logospan {
@@ -345,8 +367,12 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-.portfolioitem:hover,
-.portfolioitem:focus {
+.portfoliolist .link {
+  display: block;
+}
+
+.portfoliolist .link:hover,
+.portfoliolist .link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
