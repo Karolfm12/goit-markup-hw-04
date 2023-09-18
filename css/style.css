@@ -311,9 +311,11 @@ img {
 .footercontainer {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 
+.footerleft {
+  margin-right: 120px;
+}
 .footer .socialicons {
   list-style: none;
   display: flex;
